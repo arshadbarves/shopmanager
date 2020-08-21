@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ViewStockItem</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!-- Searchbar with a cancel button and custom cancel button text -->
+<ion-searchbar [(ngModel)]="searchQuery" (change)="search()" autocorrect="off"></ion-searchbar>
+
+</ion-content>

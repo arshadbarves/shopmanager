@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>BillProfile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="form-content">
+  <form [formGroup]="bill_reference_form"  (ngSubmit)="onSubmit(bill_reference_form.value)">
+    <ion-item>
+      <ion-label position="floating" color="primary">Bill Reference</ion-label>
+      <ion-input type="text" formControlName="docId"></ion-input>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label position="floating" color="primary">Vendor name</ion-label>
+      <ion-input type="text" formControlName="name"></ion-input>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label position="floating" color="primary">Bill number</ion-label>
+      <ion-input type="text" formControlName="billNo"></ion-input>
+    </ion-item>
+   
+    
+    <ion-item>
+      <ion-label position="floating" color="primary">Bill date</ion-label>
+      <ion-datetime formControlName="billDate"  display-format="MMM DD, YYYY" ></ion-datetime>
+    </ion-item>
+
+    
+    <ion-item>
+      <ion-label position="floating" color="primary">Phone number</ion-label>
+      <ion-input type="text" formControlName="phone"></ion-input>
+    </ion-item>
+
+    
+    <ion-item>
+      <ion-label position="floating" color="primary">City</ion-label>
+      <ion-input type="text" formControlName="city"></ion-input>
+    </ion-item>
+
+    
+    <ion-item>
+      <ion-label position="floating" color="primary">Notes</ion-label>
+      <ion-input type="text" formControlName="notes"></ion-input>
+    </ion-item>
+
+    
+    <ion-item>
+      <ion-label position="floating" color="primary">Bill reference image</ion-label>
+      <ion-input type="text" formControlName="billRef"></ion-input>
+    </ion-item>
+
+    
+    <ion-item>
+      <ion-label position="floating" color="primary">Email</ion-label>
+      <ion-input type="text" formControlName="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating" color="primary">Bill Reference image</ion-label>
+      <!-- <ion-input type="text" formControlName="image"></ion-input> -->
+      <!-- <img src={{currentImage}} /> -->
+      <ion-button ion-button clear (click)="grabPicture()">Take a photo</ion-button>
+    </ion-item>
+
+    
+   
+    <ion-button color="primary" class="submit-btn" expand="full" type="submit" [disabled]="!bill_reference_form.valid">Save</ion-button>
+  </form>
+</ion-content>

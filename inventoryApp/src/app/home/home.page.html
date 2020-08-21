@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>Shop Manager</ion-title>
+     
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+    <div>
+        <ion-button routerLink="/bill-profile"> Bills profile
+          <ion-icon slot="icon-only" name="person"></ion-icon>
+        </ion-button>
+
+        <ion-button (click) = "openModal()"> Bills List Modal
+          <ion-icon slot="icon-only" name="person"></ion-icon>
+        </ion-button> 
+      
+        <ion-button routerLink="/stock-item"> Stock Item
+        <ion-icon slot="icon-only" name="person"></ion-icon>
+      </ion-button> 
+      <ion-button routerLink="/bill-profile-list"> Bill profile list
+        <ion-icon slot="icon-only" name="person"></ion-icon>
+      </ion-button> 
+      <ion-button routerLink="/view-stock-item"> View Stock Item
+        <ion-icon slot="icon-only" name="person"></ion-icon>
+      </ion-button> 
+    </div>
+</ion-content>

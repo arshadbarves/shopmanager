@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "164140367733",
+    "firebase_url": "https://shopmanager-26111980.firebaseio.com",
+    "project_id": "shopmanager-26111980",
+    "storage_bucket": "shopmanager-26111980.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164140367733:android:c881a35cb1ebebdf",
+        "android_client_info": {
+          "package_name": "com.hasan.mobile.shopmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164140367733-qsfq85k7f0u6o083ag8chtg17m2u1dng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXb-zSAxSpNQQI_xnZb1qbxOrQDPSfFFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164140367733-qsfq85k7f0u6o083ag8chtg17m2u1dng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

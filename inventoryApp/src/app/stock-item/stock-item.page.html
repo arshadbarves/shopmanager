@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>stockItem</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-content padding class="form-content">
+    <form [formGroup]="stock_item_form" (ngSubmit)="onSubmit(stock_item_form.value)">
+      <ion-item>
+        <ion-label position="floating" color="primary">Item number</ion-label>
+        <ion-input type="text" formControlName="docId"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="primary">Item name</ion-label>
+        <ion-input type="text" formControlName="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="primary">Item type</ion-label>
+        <ion-input type="text" formControlName="type"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="primary">Size</ion-label>
+        <ion-input type="text" formControlName="size"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="primary">Quantity</ion-label>
+        <ion-input type="text" formControlName="qty"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="primary">Unit</ion-label>
+        <ion-input type="text" formControlName="unit"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="primary">Rate per quantity</ion-label>
+        <ion-input type="text" formControlName="rate"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="primary">Tax percentage</ion-label>
+        <ion-input type="text" formControlName="tax" (input)='onSearchChange($event.target.value)'></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="primary">Expenses Percentage</ion-label>
+        <ion-input type="text" formControlName="expense"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="primary">Price per quantity</ion-label>
+        <ion-input type="text" formControlName="price"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" color="primary">Bill reference</ion-label>
+        <div>
+        <ion-input type="text" formControlName="bill"></ion-input>
+        <ion-button (click) = "openModal()"> ...
+          <ion-icon slot="icon-only" name="search"></ion-icon>
+        </ion-button> 
+      </div>
+      </ion-item>
+
+      <ion-button color="primary" class="submit-btn" expand="full" type="submit"
+        [disabled]="!stock_item_form.valid">Save</ion-button>
+    </form>
+  </ion-content>

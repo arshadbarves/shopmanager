@@ -1,0 +1,30 @@
+
+  <!-- Put your content here <ion-scroll zooming="true" direction="xy"   >-->
+
+<p>
+  bill-list-modal works!
+
+</p>
+<div>
+<ion-list >
+  <ion-item *ngFor="let billProfile of billProfiles">
+    <ion-label (click)="billProfileSelected(billProfile)">
+      <h2>
+        {{ billProfile.docId }}, {{billProfile.billDispDate}}
+      </h2>
+      <p>
+      {{ billProfile.name }}, 
+      {{ billProfile.city }},  Ph: {{ billProfile.phone}}
+      </p>
+      <p text-wrap>notes:  {{billProfile.notes}}</p>
+    </ion-label>
+  </ion-item>
+</ion-list>
+</div>
+  <ion-button aling = "center" (click)="myDismiss()">
+    Cancel
+  </ion-button>
+
+  
+<!-- 
+</ion-scroll> -->
